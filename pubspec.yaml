@@ -1,0 +1,64 @@
+name: flutter_boilerplate
+description: A new Flutter project.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  intl: ^0.20.2 # For Date Conversion
+  provider: ^6.0.5 # Provider For State Management
+  dio: ^5.0.2 # For Network API Calling
+  shared_preferences: ^2.0.18 # To Stored Data in Local Storage
+  connectivity_plus: ^6.1.4 # To Check Network Connectivity
+  get_it: ^8.0.3 # For Accessing Service Objects
+  shimmer: ^3.0.0 # For Skeleton View
+  image_picker: ^1.1.2 # To Pick Image From Camera and Gallery
+  app_settings: ^6.1.1 # To Open App Settings
+  device_info_plus: ^11.3.0 # To Get Device Info
+  file_picker: ^10.1.2 # To Pick Media Files From Device
+  cached_network_image: ^3.2.3 # For Image Caching
+  json_annotation: ^4.8.0 # For Json Conversion
+  flutter_dotenv: ^5.0.2 # To Store variables in env file
+  rxdart: ^0.28.0
+  flutter_svg: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  json_serializable: ^6.0.1
+  build_runner: ^2.1.5
+
+flutter:
+  uses-material-design: true
+  assets:
+    # - assets/images/
+    - assets/icons/
+    - .env.dev
+    - .env.stage
+    - .env.prod
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
